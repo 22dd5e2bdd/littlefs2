@@ -152,9 +152,8 @@ pub mod path {
     pub type Result<T> = core::result::Result<T, Error>;
 }
 
-#[macro_use]
-extern crate delog;
-generate_macros!();
+#[cfg(feature = "delog")]
+delog::generate_macros!();
 
 /// cf. Macros documentation
 #[macro_use]
