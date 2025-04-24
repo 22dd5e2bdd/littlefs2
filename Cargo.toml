@@ -43,7 +43,7 @@ ll-assertions = ["littlefs2-sys/assertions"]
 # enable trace in backend C code
 ll-trace = ["littlefs2-sys/trace"]
 c-stubs = []
-delog = ["delog"]
+delog = ["dep:delog"]
 
 log-all = []
 log-none = []
